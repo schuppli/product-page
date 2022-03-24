@@ -29,6 +29,7 @@ const AddProduct = ({ onAdd }) => {
 
     return (
         <div>
+            <h1>ADD A NEW PRODUCT</h1>
             <form className="addProduct" onSubmit={onSubmit}>
 
                 <div class='formControl'>
