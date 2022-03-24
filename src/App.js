@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Products from "./components/Products";
-
+import AddProduct from './components/AddProduct';
 
 function App() {
 
@@ -22,7 +22,7 @@ function App() {
     return data
   }
 
-  //DeleteProduct
+  //delete a product
   const deleteProduct = async (id) => {
     const res = await fetch(`http://localhost:5000/products/${id}`, {
       method: 'DELETE',
@@ -32,9 +32,25 @@ function App() {
       : alert('Error Deleting This Task')
   }
 
+  //add a new product
+  const addProduct = async (product) => {
+    const res = await fetch('http://localhost:5000/products', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify(product),
+    })
+
+    const data = await res.json()
+
+    setProducts([...products, data])
+  }
+
   return (
     <div className="App">
       <Products products={products} onDelete={deleteProduct} />
+      <AddProduct onAdd={addProduct} />
     </div>
   );
 }

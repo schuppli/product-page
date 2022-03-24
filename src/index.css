@@ -12,10 +12,13 @@ code {
     monospace;
 }
 
+.App {
+  margin: 0 15vw;
+}
+
 .product {
   display: flex;
   justify-content: space-around;
-  margin: 0 15vw;
 }
 
 .productImage {
@@ -43,4 +46,20 @@ code {
 .faImage {
   width: 5vw;
   height: 100%;
+}
+
+.formControl {
+  margin: 20px 0;
+}
+
+.formControl label {
+  display: block;
+}
+
+.formControl input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
 }

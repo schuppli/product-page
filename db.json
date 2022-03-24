@@ -2,16 +2,24 @@
   "products": [
     {
       "id": 1,
-      "name": "Shampoo",
-      "description": "this is a shampoo",
-      "stock": 0,
-      "price": 9.99
-    },
-    {
       "name": "Bodylotion",
       "description": "this is a bodylotion",
       "stock": 150,
       "price": 4.99
+    },
+    {
+      "name": "Shampoo",
+      "description": "description of a shampoo",
+      "price": "3.99",
+      "stock": "3",
+      "id": 4
+    },
+    {
+      "name": "Sunscreen",
+      "description": "this is a description of sunscreen",
+      "price": "7.99",
+      "stock": "6",
+      "id": 5
     }
   ]
 }
