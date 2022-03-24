@@ -19,19 +19,25 @@ code {
 }
 
 .productImage {
-  /*background-color: rosybrown;*/
-  width: 30%;
+  /* background-color: rosybrown; */
+  width: 20%;
 }
 
 .productText {
-  /*background-color: aliceblue;*/
+  /* background-color: aliceblue; */
   width: 50%;
 }
 
 .productInfo {
-  /*background-color: blanchedalmond;*/
+  /* background-color: blanchedalmond; */
   width: 20%;
   align-items: flex-end;
+}
+
+.productX {
+  width: 10%;
+  align-content: flex-end;
+  /* background-color: darkseagreen; */
 }
 
 .faImage {

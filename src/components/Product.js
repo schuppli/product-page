@@ -1,7 +1,7 @@
 import React from 'react'
-import { FaImage } from 'react-icons/fa'
+import { FaImage, FaTimes } from 'react-icons/fa'
 
-const Product = ({ product }) => {
+const Product = ({ product, onDelete }) => {
     return (
         <div className="product">
             <div className="productImage">
@@ -14,6 +14,11 @@ const Product = ({ product }) => {
             <div className="productInfo">
                 <h5>{product.stock}</h5>
                 <h4>{"$ " + product.price}</h4>
+            </div>
+            <div className="productX">
+                <h3>
+                    <FaTimes onClick={() => onDelete(product.id)} />
+                </h3>
             </div>
 
         </div>

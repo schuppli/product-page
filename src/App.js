@@ -1,22 +1,6 @@
 import { useState, useEffect } from 'react'
 import Products from "./components/Products";
 
-/*
-const productArray = [
-  {
-    name: "Shampoo",
-    description: "this is a shampoo",
-    stock: 12,
-    price: 9.99,
-  },
-  {
-    name: "Bodylotion",
-    description: "this is a bodylotion",
-    stock: 150,
-    price: 4.99,
-  }
-]
-*/
 
 function App() {
 
@@ -38,11 +22,19 @@ function App() {
     return data
   }
 
-
+  //DeleteProduct
+  const deleteProduct = async (id) => {
+    const res = await fetch(`http://localhost:5000/products/${id}`, {
+      method: 'DELETE',
+    })
+    res.status === 200
+      ? setProducts(products.filter((product) => product.id != id))
+      : alert('Error Deleting This Task')
+  }
 
   return (
     <div className="App">
-      <Products products={products} />
+      <Products products={products} onDelete={deleteProduct} />
     </div>
   );
 }
