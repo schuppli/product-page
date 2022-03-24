@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Shampoo",
       "description": "this is a shampoo",
-      "stock": 12,
+      "stock": 0,
       "price": 9.99
     },
     {

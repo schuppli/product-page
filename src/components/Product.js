@@ -12,7 +12,7 @@ const Product = ({ product, onDelete }) => {
                 <p>{product.description}</p>
             </div>
             <div className="productInfo">
-                <h5>{product.stock}</h5>
+                <h5>{product.stock > 0 ? "In Stock" : "Sold Out"}</h5>
                 <h4>{"$ " + product.price}</h4>
             </div>
             <div className="productX">
