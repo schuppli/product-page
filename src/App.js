@@ -49,7 +49,6 @@ function App() {
 
   return (
     <div className="App">
-      
       <Products products={products} onDelete={deleteProduct} />
       <AddProduct onAdd={addProduct} />
     </div>

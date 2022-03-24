@@ -1,6 +1,8 @@
 import React from 'react'
 import { FaImage, FaTimes } from 'react-icons/fa'
 
+//TODO: handle overflow for long descriptions, maybe even hide description until user clicks on the item
+//
 const Product = ({ product, onDelete }) => {
     return (
         <div className="product">

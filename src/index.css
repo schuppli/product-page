@@ -19,6 +19,7 @@ code {
 .product {
   display: flex;
   justify-content: space-around;
+  margin: 5px;
 }
 
 .productImage {
@@ -27,8 +28,9 @@ code {
 }
 
 .productText {
-  /* background-color: aliceblue; */
+  /*background-color: aliceblue;*/
   width: 50%;
+  margin: 0 25px 0 0;
 }
 
 .productInfo {

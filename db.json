@@ -16,10 +16,17 @@
     },
     {
       "name": "Sunscreen",
-      "description": "this is a description of sunscreen",
-      "price": "7.99",
-      "stock": "6",
+      "description": "this is a description of a sunscreen",
+      "price": "12",
+      "stock": "14",
       "id": 5
+    },
+    {
+      "name": "shampoo",
+      "description": "asdasdsa dasdasd asd asd asd asd asd as das das das dasdasd asdasdasdsads sdsdsdsdsf dsmfn fkjfnds f nsdfskdjf sdkfjd fdskfj fmnf mf, fm,n fms,f mfns fmsnf s,fmn f,ms fmsnf s,mnf snf sdm",
+      "price": "2",
+      "stock": "3",
+      "id": 6
     }
   ]
 }

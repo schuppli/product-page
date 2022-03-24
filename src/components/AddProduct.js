@@ -27,11 +27,11 @@ const AddProduct = ({ onAdd }) => {
         setStock('')
     }
 
+    //TODO: add validation
     return (
         <div>
             <h1>ADD A NEW PRODUCT</h1>
             <form className="addProduct" onSubmit={onSubmit}>
-
                 <div class='formControl'>
                     <label htmlFor="productName" id='labelName'>Name of Product</label>
                     <input
