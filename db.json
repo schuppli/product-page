@@ -1,32 +1,32 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Bodylotion",
-      "description": "this is a bodylotion",
-      "stock": 150,
-      "price": 4.99
+      "name": "Shampoo",
+      "description": "description of sunscreen",
+      "price": "3.99",
+      "stock": "20",
+      "id": 2
     },
     {
-      "name": "Shampoo",
-      "description": "description of a shampoo",
+      "name": "Bodylotion",
+      "description": "description of bodylotion",
       "price": "3.99",
-      "stock": "3",
-      "id": 4
+      "stock": "13",
+      "id": 3
     },
     {
       "name": "Sunscreen",
-      "description": "this is a description of a sunscreen",
-      "price": "12",
-      "stock": "14",
-      "id": 5
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "price": "8.99",
+      "stock": "20",
+      "id": 4
     },
     {
-      "name": "shampoo",
-      "description": "asdasdsa dasdasd asd asd asd asd asd as das das das dasdasd asdasdasdsads sdsdsdsdsf dsmfn fkjfnds f nsdfskdjf sdkfjd fdskfj fmnf mf, fm,n fms,f mfns fmsnf s,fmn f,ms fmsnf s,mnf snf sdm",
-      "price": "2",
-      "stock": "3",
-      "id": 6
+      "name": "Name",
+      "description": "djskld",
+      "price": "3.99",
+      "stock": "12",
+      "id": 5
     }
   ]
 }

@@ -10,6 +10,7 @@ const AddProduct = ({ onAdd }) => {
 
     const onSubmit = (e) => {
         e.preventDefault()
+
         if (!name) {
             alert('Please add a Name')
             return
@@ -30,9 +31,9 @@ const AddProduct = ({ onAdd }) => {
     //TODO: add validation
     return (
         <div>
-            <h1>ADD A NEW PRODUCT</h1>
             <form className="addProduct" onSubmit={onSubmit}>
-                <div class='formControl'>
+
+                <div className='formControl'>
                     <label htmlFor="productName" id='labelName'>Name of Product</label>
                     <input
                         type="text"
@@ -43,10 +44,11 @@ const AddProduct = ({ onAdd }) => {
                     />
                 </div>
 
-                <div class='formControl'>
+                <div className='formControl'>
                     <label htmlFor="productPrice" id='labelPrice'>Price of Product</label>
                     <input
                         type="number"
+                        min="0,0"
                         id="productPrice"
                         placeholder='Price'
                         value={price}
@@ -54,7 +56,7 @@ const AddProduct = ({ onAdd }) => {
                     />
                 </div>
 
-                <div class='formControl'>
+                <div className='formControl'>
                     <label htmlFor="productDescription" id='labelDescription'>Description</label>
                     <input
                         type="text"
@@ -65,10 +67,11 @@ const AddProduct = ({ onAdd }) => {
                     />
                 </div>
 
-                <div class='formControl'>
+                <div className='formControl'>
                     <label htmlFor="productStock" id='labelStock'>Quantity in Stock</label>
                     <input
                         type="number"
+                        min="0"
                         id="productStock"
                         placeholder='In Stock'
                         value={stock}

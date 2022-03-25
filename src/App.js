@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
 import Products from "./components/Products";
 import AddProduct from './components/AddProduct';
+import HeaderAddProduct from './components/HeaderAddProduct';
 
 function App() {
 
+  const [showAddProduct, setShowAddProduct] = useState(false)
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -13,6 +15,7 @@ function App() {
     }
 
     getProducts()
+
   }, [])
 
   //fetch products from json server
@@ -27,8 +30,9 @@ function App() {
     const res = await fetch(`http://localhost:5000/products/${id}`, {
       method: 'DELETE',
     })
+
     res.status === 200
-      ? setProducts(products.filter((product) => product.id != id))
+      ? setProducts(products.filter((product) => product.id !== id))
       : alert('Error Deleting This Task')
   }
 
@@ -43,14 +47,26 @@ function App() {
     })
 
     const data = await res.json()
-
     setProducts([...products, data])
   }
 
   return (
     <div className="App">
-      <Products products={products} onDelete={deleteProduct} />
-      <AddProduct onAdd={addProduct} />
+
+      <h1>OUR PRODUCTS</h1>
+
+      {
+        products.length > 0
+          ? (<Products products={products} onDelete={deleteProduct} />)
+          : (<h5>The store is empty - no products to show</h5>)
+      }
+
+      <HeaderAddProduct onAdd={() => setShowAddProduct(!showAddProduct)} showAdd={showAddProduct} />
+
+      {
+        showAddProduct && <AddProduct onAdd={addProduct} />
+      }
+
     </div>
   );
 }
