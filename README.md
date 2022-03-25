@@ -1,3 +1,7 @@
+## JSON-Server `npm run server`
+
+To start the json server, run 'npm run server' in the project directory
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
